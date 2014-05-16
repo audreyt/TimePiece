@@ -2,8 +2,7 @@ Name:               TimePiece
 Version:            0.0.3
 Synopsis:           A simple tile-based digital clock screen saver
 Description:        A simple tile-based digital clock screen saver
-License:            BSD3
-License-File:       LICENSE
+License:            PublicDomain
 Category:           Screensaver
 Author:             Audrey Tang
 Maintainer:         Audrey Tang <audreyt@audreyt.org>
