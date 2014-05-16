@@ -21,6 +21,7 @@ Executable:         TimePiece
 HS-Source-Dirs:     .
 Main-Is:            HSMain.hs
 GHC-Options:        -no-hs-main -Wall
+Include-Dirs:       /usr/include/SDL /usr/local/include/SDL
 C-Sources:          c_main.c
 Extensions:         GeneralizedNewtypeDeriving, ForeignFunctionInterface
 Other-Modules:      Cache Image Paths Main Point Render Tiles Zoom

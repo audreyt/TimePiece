@@ -2,7 +2,7 @@
 module HSMain where
 import Main
  
-foreign export ccall hs_main :: IO ()
+foreign export ccall hs_MAIN :: IO ()
  
-hs_main :: IO ()
-hs_main = main
+hs_MAIN :: IO ()
+hs_MAIN = main

@@ -28,7 +28,7 @@ int SDL_main(int argc, char *argv[])
     hs_add_root(__stginit_HSMain);
 #endif
  
-    hs_main();
+    hs_MAIN();
  
     hs_exit();
  
