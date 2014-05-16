@@ -13,7 +13,11 @@
 extern void __stginit_HSMain ( void );
 #endif
  
+#ifdef main
 int SDL_main(int argc, char *argv[])
+#else
+int main(int argc, char *argv[])
+#endif
 {
     int i;
  
