@@ -70,7 +70,7 @@ _calculateTiling = initCache newCacheOnce
 calculateTiling :: String -> IO [Tiling]
 calculateTiling = cacheOnce _calculateTiling $ \time -> forM time $ \ch -> do
     ttf     <- getDataFileName "TimePiece.ttf"
-    pts     <- renderChar ttf 22 ch
+    pts     <- renderChar ttf (if ch == '4' || ch == ':' then 28 else 30) ch
     tiling  <- makeRandomTiles pts
     seeds   <- forM tiling . const $ randomRIO (1, 3)
     return $ MkTiling tiling seeds (edgePoint (toPointSet pts))
